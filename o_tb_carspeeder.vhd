@@ -23,7 +23,8 @@ architecture behaviour of tb_carspeeder is
     signal speed1, speed10, speed100 : std_logic_vector(3 downto 0);
     signal speeding                  : std_logic;
     signal digit1, digit10, digit100 : std_logic_vector(7 downto 0);
-    constant clk_hperiod : time :=50000 ns;  -- 100 kHz Half period:= 50000 ns
+     -- 100 kHz Half period:= 5000 ns
+    constant clk_hperiod : time :=5000 ns; 
     
     component carspeeder
         port(        
