@@ -144,7 +144,7 @@ begin
     begin
         if (a<b) then 
             lessthan <='1';
-            equalto <='0'
+            equalto <='0';
         elsif (a=b) then
             lessthan <='0';
             equalto <='1';
