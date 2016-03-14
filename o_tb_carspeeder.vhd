@@ -84,7 +84,7 @@ begin
             s1 <='1';
             wait for 1000 ns;
             s1 <='0';
-            wait for 15000000 ns;
+            wait for 1500000 ns;
             s2 <='1';
             wait for 1000 ns;
             s2 <='0';
