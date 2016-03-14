@@ -58,7 +58,7 @@ begin
    begin
         -- Setting control signals
         --------------------------
-        reset    <= '1' , '1' after 50 ns, '1' after 100 ns;
+        reset    <= '1' , '0' after 50 ns, '1' after 100 ns;
         speed1   <= "0000"; 
         speed10  <= "0110"; 
         speed100 <= "0011"; 
