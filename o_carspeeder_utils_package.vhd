@@ -174,7 +174,7 @@ architecture structure of sr_ff is
 begin
     reg : process (s, r, reset)
     begin
-        if (r='1' or reset='0' then
+        if (r='1' or reset='0') then
             q <= '0';
         elsif (s'event and s ='1') then
             q <= '1';	
