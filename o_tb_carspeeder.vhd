@@ -19,19 +19,19 @@ end tb_carspeeder;
 -- Architecture Definition
 --------------------------
 architecture behaviour of tb_carspeeder is
-signal s1, s2, reset, clk        : std_logic;
-signal speed1, speed10, speed100 : std_logic_vector(3 downto 0;
-signal speeding                  : std_logic;
-signal digit1, digit10, digit100 : std_logic_vector(7 downto 0);
-constant clk_hperiod : time :=50000 ns;  -- 100 kHz Half period:= 50000 ns
-
-component carspeeder
- 	port(        
-        s1, s2, clk, reset : in std_logic;
-	 	speed1, speed10, speed100 : in std_logic_vector(3 downto 0);
-        speeding : out std_logic;
-        digit1, digit10, digit100 : out std_logic_vector(7 downto 0)  
-    );
+    signal s1, s2, reset, clk        : std_logic;
+    signal speed1, speed10, speed100 : std_logic_vector(3 downto 0;
+    signal speeding                  : std_logic;
+    signal digit1, digit10, digit100 : std_logic_vector(7 downto 0);
+    constant clk_hperiod : time :=50000 ns;  -- 100 kHz Half period:= 50000 ns
+    
+    component carspeeder
+        port(        
+            s1, s2, clk, reset : in std_logic;
+            speed1, speed10, speed100 : in std_logic_vector(3 downto 0);
+            speeding : out std_logic;
+            digit1, digit10, digit100 : out std_logic_vector(7 downto 0)  
+        );
 end component;
 
 begin
