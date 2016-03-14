@@ -19,7 +19,7 @@ architecture structure of carspeeder is
     -- internal signals 
     signal srff, carry1, carry10, carry100, digit_equal : std_logic;
     signal sp10, sp100, eq_100, less_100, eq_10, less_10 : std_logic;
-    signal bcd1, bcd10, bd100 : std_logic_vector(3 downto 0);
+    signal bcd1, bcd10, bcd100 : std_logic_vector(3 downto 0);
 
 -- components
 for latch : sr_ff use entity work.sr_ff;
