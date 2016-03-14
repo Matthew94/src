@@ -38,13 +38,6 @@ component sr_ff
     );
 end component;
 
-component dff
-    port( 
-        d, clk : in std_logic;
-        q : out std_logic
-    );
-end component;
-
 end carspeeder_utils_package;
 
 --
@@ -182,26 +175,3 @@ begin
     end process;
 end structure;
 
---
--- this is the code for a negative edge-triggered flip-flop
---
-library ieee;                                    
-    use ieee.std_logic_1164.all;
-    use IEEE.std_logic_unsigned.all;
-
-entity dff is
-    port( 
-        d, clk : in std_logic;
-	    q : out std_logic
-    );
-end dff;
-
-architecture model of dff is
-begin
-    reg : process (clk)
-    begin
-        if(clk'event and clk ='0') then
-            q <= d;
-		end if;
-    end process;
-end model;
