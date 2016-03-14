@@ -71,7 +71,7 @@ begin
         elsif (clk'event and clk='1') then                    
             if count = 9 then
                 scount := "0000";
-                carry <= '0';
+                carry <= '1';
             else 
                 scount := scount + '1';
                 carry <= '0';
