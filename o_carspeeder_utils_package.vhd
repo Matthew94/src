@@ -63,7 +63,7 @@ begin
         variable scount : unsigned (3 downto 0);
     begin
         if reset ='0' then
-            scount := "0010";
+            scount := "0000";
             carry <= '0';
         elsif ful ='0' then
             scount := "0000";
