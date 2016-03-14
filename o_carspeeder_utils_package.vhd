@@ -27,7 +27,7 @@ component compare_function
     generic (word_size : integer:=8);	--  adder word size
     port(               
         a,b : in std_logic_vector(word_size-1 downto 0);
-        lessthan, equalto : out st_logic
+        lessthan, equalto : out std_logic
     );
 end component;
 
